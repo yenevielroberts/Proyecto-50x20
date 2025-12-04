@@ -1,78 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
 body{
 
+font-family:'Merriweather', serif;
+background-color: #f5f6fa;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*titulos*/
+
+h1,h2,h3{
+    color: #4A90E2;
 }
 /*Section de colores*/
 
-.colores{
+#colores{
 
+    display: flex;
+    flex-direction: column;
+   
 }
-/*container de los colores primarios*/
-.colores-primarios{
+/*section de los colores primarios y secundarios*/
+.colores-primarios, .colores-secundarios{
 
+    display: flex;
+    flex-direction: column;
+    
 }
 
+/*container solo para colores */
+.container-colores{
+    display: flex;
+    flex-direction: row;
+}
+/*colores*/
+
+/*shape*/
+.color-primario-uno,
+.color-primario-dos,
+.color-secundario-uno,
+.color-secundario-dos,
+.color-secundario-tres,
+.color-secundario-cuatro{
+
+    width: 50px;
+    height: 50px;
+    border-radius:100px;
+    border:solid 1px;
+    border-color: #263238 ;
+}
 .color-primario-uno{
 
+    background-color:#4A90E2;
 }
 
 .color-primario-dos{
-
+    background-color:#4CAF50;
+ 
 }
 
-/*container de los colores secundarios*/
-.colores-secundarios{
-
-}
-
-/*Colores*/
+/*Colores secundarios*/
 .color-secundario-uno{
-
+    background-color:#F79C42;
+    
 }
 .color-secundario-dos{
-
+    background-color:#F5F6FA;
+ 
 }
 .color-secundario-tres{
 
+    background-color: #263238;
 }
 .color-secundario-cuatro{
 
+    background-color: #F7E48B;
 }
 
 /*Section botones*/
 
-.buttons{
-
+#buttons{
+    display: flex;
+    flex-direction: column;
 }
 
-/*Container botones rellenos*/
+/*Container botones rellenos y outlined*/
+
 .btns-filled{
 
 }
 
 /*botones*/
+/*btns shape para botones filled*/
+.btn-primario-filled,
+.btn-secundario-filled,
+.btn-hover-filled{
+
+    width: 100px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 0px;
+}
+
 .btn-primario-filled{
+    background-color: #4CAF50;
 
 }
 .btn-secundario-filled{
 
+    background-color: #F79C42;
 }
 .btn-hover-filled{
-    
+    background-color: #4CAF50;
 }
-
+.btn-hover-filled:hover{
+    color:#f5f6fa;
+    box-shadow: 0px 5px 16px #4CAF50 ;
+    transition: all 0.2s ease;
+}
 /*Container botones outlined*/
 
 .btns-outlined{
 
+    margin-top: 10px;
 }
 
 /*Botones*/
-.btn-primario-outlined{
+/*btns shape para botones filled*/
+.btn-primario-outlined,
+.btn-secundario-outlined,
+.btn-hover-outlined{
+    
+
+    width: 100px;
+    padding: 5px;
+    border-radius: 15px;
+    border:solid 1px;
+    
 
 }
+.btn-primario-outlined{
+    border-color: #4CAF50 ;
+}
+
 .btn-secundario-outlined{
 
+    border-color: #F79C42 ;
 }
+/*hover*/
 .btn-hover-outlined{
+
+    transition: all 1s ease;
+    border-color: #4CAF50 ;
+}
+
+.btn-hover-outlined:hover{
+    color: #f5f6fa;
+    background-color: #4CAF50 ;
+}
+
+/*section elementos del formulario*/
+#form-elements, .inputs{
+
+    display: flex;
+    flex-direction: column;
+}
+/*container input*/
+.inputs{
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*inputs*/
+
+.input-text{
+
+    margin: 5px;
+    width: 500px;
+    height: 20px;
+    border-radius: 10px;
+    border: solid 1px;
+    border-color: #263238;
+}
+
+.input-date{
+
+     margin: 5px;
+    width: 200px;
+    padding: 5px;
+}
+.textarea{
+
+     margin: 5px;
+    width: 300px;
+    height: 200px;
+}
+
+.input-text,
+.textarea,
+.input-date:focus{
+   
+    outline-color: #4A90E2 !important;
+}
+
+
+
+
+/*container checkbox*/
+
+.checkbox{
+
+    display: flex;
+    flex-direction:row;
+    width: auto;
+    height: auto;
+}
+
+/*checkboxes*/
+.checkbox div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+/*medida*/
+input[type='checkbox'], input[type='radio']{
+    width: 20px;
+    height: 20px;
+}
+.checkbox-selected:checked{
+
+    width: 20px;
+    height: 20px;
+    accent-color: #F79C42;
+
+}
+/*radio*/
+.radio-selected:checked:checked{
+    accent-color: #F79C42;
+   border-color:  #F79C42;
+
+}
+
+/*select container*/
+.select-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.select{
+
+    width: 100px;
+}
+
+/*section icons*/
+#icons{
+
+}
+
+/*section cards*/
+
+#cards{
+
+}
+
+/*cards*/
+.card{
 
 }

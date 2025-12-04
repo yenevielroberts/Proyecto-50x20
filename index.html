@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia de estilos</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -24,24 +25,30 @@
 
         </section>
 
-        <section class="colores">
+        <section id="colores">
             <h2>Colores</h2>
-            <div class="colores-primarios">
+            <section class="colores-primarios">
                 <h3>Primarios</h3>
-                <div class="color-primario-uno"></div>
-                <div class="color-primario-dos"></div>
-            </div>
-            <div class="colores-secundarios">
+                <div class="container-colores">
+                    <div class="color-primario-uno"></div>
+                    <div class="color-primario-dos"></div>
+                </div>
+               
+            </section>
+            <section class="colores-secundarios">
                 <h3>Secundarios</h3>
-                <div class="color-secundario-uno"></div>
-                <div class="color-secundario-dos"></div>
-                <div class="color-secundario-tres"></div>
-                <div class="color-secundario-cuatro"></div>
-            </div>
+                <div class="container-colores">
+                    <div class="color-secundario-uno"></div>
+                    <div class="color-secundario-dos"></div>
+                    <div class="color-secundario-tres"></div>
+                    <div class="color-secundario-cuatro"></div>
+                    </div>
+              
+            </section>
 
         </section>
 
-        <section class="buttons">
+        <section id="buttons">
             <h2>Botones</h2>
             <div class="btns-filled">
                 <button class="btn-primario-filled">Primario</button>
@@ -56,33 +63,34 @@
          
         </section>
 
-        <section class="form-elements">
+        <section id="form-elements">
             <div class="inputs">
                  <h2>Inputs</h2>
                 <label for="input-text">Type text</label>
-                <input type="text" name="input-text"class="input-text" />
+                <input type="text" name="input-text"id="input-text" class="input-text" />
 
                 <label for="input-date">Fecha</label>
-                <input type="date" name="input-date" class="input-date" />
+                <input type="date" name="input_-ate" id="input-date" class="input-date" />
 
                 <label for="textarea">Text area</label>
-                <textarea type="text" name="textarea" class="textarea" >Escribe algo</textarea> 
+                <textarea type="text" name="textarea" id="textarea" class="textarea" >Escribe algo</textarea> 
             </div>
           
-            <div class="ckecbox">
-                <label for="input-checkbox-selected">label</label>
-                <input type="checkbox"  name="input-checkbox-selected" class="input-checkbox-selected" />
-                <label for="input-checkbox">label</label>
-                <input type="checkbox" name="input-checkbox" class="input-checkbox" />
-
-                <label for="input-radio-selected">label</label>
-                <input type="radio" name="input-radio-selected" class="input-radio-selected" />
-                <label for="input-radio">label</label>
-                <input type="radio" name="input-radio" class="input-radio" />
+            <div class="checkbox">
+                <div>
+                    <label for="checkbox-selected">Label</label>
+                    <input type="checkbox"  name="checkbox-selected" id="checkbox-selected" class="checkbox-selected" />
+                </div>
+                <div>
+                   <label for="radio-selected">Label</label>
+                    <input type="radio" name="adio-selected" id="radio-selected" class="radio-selected" /> 
+                </div>
+                
+                
             </div>
-            <div class="select">
+            <div class="select-container">
                 <label for="select">Elige una opción</label>
-                <select name="select" class="select">
+                <select name="select" id="select" class="select">
                     <option>Opción 1</option>
                     <option>Opción 2</option>
                     <option>Opción 3</option>
@@ -90,11 +98,11 @@
             </div>
         </section>
 
-        <section>
+        <section id="icons">
             <h2>Iconos</h2>
         </section>
 
-        <section>
+        <section id="cards">
             <h2>Cards(tarjetas)</h2>
             <div class="card">
                 <h2>Card</h2>
