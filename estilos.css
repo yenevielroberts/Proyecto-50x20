@@ -19,7 +19,7 @@ background-color: #f5f6fa;
 header{
     display: flex;
     flex-direction:row ;
-    background-color: #4A90E2;
+    background-color: #885e18;
     align-items: center;
     color: #F5F6FA;
     height: 100px;
@@ -45,7 +45,7 @@ nav{
 }
 
 .nav-enlaces:hover{
-    color: #F79C42;
+    color: #cc9a4c;
     text-shadow: 0px 5px 16px #F5F6FA  ;
     transition: all 0.2s ease;
   
@@ -70,7 +70,7 @@ main{
 /*titulos*/
 
 h1,h2,h3{
-    color: #4A90E2;
+    color: #885e18;
 }
 /*Section de colores*/
 
@@ -406,7 +406,7 @@ input[type='checkbox'], input[type='radio']{
 footer{
     display: flex;
     flex-direction:row ;
-    background-color: #4A90E2;
+    background-color: #885e18;
     align-items: center;
     color: #F5F6FA;
     height: 100px;

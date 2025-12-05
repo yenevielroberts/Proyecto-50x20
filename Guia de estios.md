@@ -21,6 +21,16 @@ Fondo: #f5f6fa
 Botones: #4CAF50
 Tarjetas fondo: #e4e4e4  
 
+Nuevos colores:
+#885e18
+#cc9a4c
+#f5c77f
+#f5f6fa
+
+
+#4d3104
+#2a1a00
+
 ## Tipografía
 
 - Mostserrat
