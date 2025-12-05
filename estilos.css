@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
-body{
+.body-claro{
 
 font-family:'Merriweather', serif;
 background-color: #f5f6fa;
     
+}
+
+.body-oscuro{
+
+    font-family:'Merriweather', serif;
+    background-color: #263238;
 }
 
 /*Barra de navegación*/
@@ -51,9 +57,13 @@ main{
  
 }
 
-p{
+.p-modo-claro{
     color: #263238;
 }
+.p-modo-oscuro{
+    color: #F5F6FA;
+}
+
 
 /*titulos*/
 
@@ -324,7 +334,7 @@ input[type='checkbox'], input[type='radio']{
 .icons-outlined {
  font-size: 70px;
  color: #263238;
- margin: 10px;
+  margin: 10px;
   display: inline-block;
   vertical-align: middle;
   transition: transform 0.2s;
