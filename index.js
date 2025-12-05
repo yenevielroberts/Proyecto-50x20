@@ -17,10 +17,13 @@ app.get('/',async (req,res)=>{
 
     const datos=await leerDatos()
 
-    res.render("index",{datos})
+    res.render("Home",{datos})
 
 })
 
+app.post('/subirPost',async(req,res)=>{
+
+})
 app.listen(3000, () => {
     console.log(`Server listing on http://localhost:3000`);
 });
