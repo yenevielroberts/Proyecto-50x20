@@ -7,11 +7,52 @@ background-color: #f5f6fa;
     
 }
 
+/*Barra de navegación*/
+header{
+    display: flex;
+    flex-direction:row ;
+    background-color: #4A90E2;
+    align-items: center;
+    color: #F5F6FA;
+    height: 100px;
+
+}
+header h1{
+    color: #F5F6FA;
+    margin: 10px;
+}
+
+nav{
+    margin:10px;
+    align-items: end;
+    justify-content: right;
+}
+
+.nav-enlaces{
+    color: #F5F6FA;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.nav-enlaces:hover{
+    color: #F79C42;
+    text-shadow: 0px 5px 16px #F5F6FA  ;
+    transition: all 0.2s ease;
+  
+}
+
 main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+ 
+}
+
+p{
+    color: #263238;
 }
 
 /*titulos*/
@@ -186,7 +227,7 @@ h1,h2,h3{
 .input-text{
 
     margin: 5px;
-    width: 500px;
+    width: 400px;
     height: 20px;
     border-radius: 10px;
     border: solid 1px;
@@ -275,9 +316,37 @@ input[type='checkbox'], input[type='radio']{
 
 
 /*section icons*/
-#icons{
 
+#icons{
+    width: 500px;
+}
+
+.icons-outlined {
+ font-size: 70px;
+ color: #263238;
+ margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+
+.icons-outlined:hover{
+    animation: bounce 0.6s infinite;
+    color: #4CAF50;
+}
+
+/*animación para los iconos*/
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
    
+  }
+  50% {
+    transform: translateY(-10px);
+   
+  }
 }
 
 /*section cards*/
@@ -319,4 +388,34 @@ input[type='checkbox'], input[type='radio']{
     border: solid 1px;
     border-color:#263238 ;
     box-shadow:0px 1px 5px rgba(0, 0, 0, 1) ;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    flex-direction:row ;
+    background-color: #4A90E2;
+    align-items: center;
+    color: #F5F6FA;
+    height: 100px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+footer h3{
+    color: #F5F6FA;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 5px;
+}
+
+.footer-text p{
+    margin-top: 0px;
+    color: #F5F6FA;
 }
