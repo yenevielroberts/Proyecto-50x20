@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
+*{
+    font-family:'Merriweather', serif;
+}
+
 .body-claro{
 
-font-family:'Merriweather', serif;
 background-color: #f5f6fa;
     
 }
 
 .body-oscuro{
-
     font-family:'Merriweather', serif;
     background-color: #263238;
 }
@@ -367,7 +369,7 @@ input[type='checkbox'], input[type='radio']{
     flex-direction:column ;
     
 }
-#cards div{
+#cards>div{
     display: flex;
     flex-direction:row ;
     flex-wrap: wrap;
@@ -377,7 +379,7 @@ input[type='checkbox'], input[type='radio']{
 .card{
   
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column;
     border:solid 2px;
     border-color: #f5f6fa;
     margin:5px;
